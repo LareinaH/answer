@@ -1,0 +1,5 @@
+<!--pages/answer/one/one.wxml-->
+
+<text></text>
+<inputquestion></inputquestion>
+<selectquestion></selectquestion>

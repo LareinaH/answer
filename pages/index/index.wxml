@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-section-title">
+        <text>请选择你的挑战</text>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <challenge myTitle="简单模式" available="true" myToolTip="" myImage="" targetUrl="/pages/answer/one/one"></challenge>
+          <challenge myTitle="一站到底" available="true" myToolTip="" myImage=""></challenge>
+        </view>
+      <view class="flex-wrp" style="flex-direction:row;">
+          <challenge myTitle="飞花令" :available="false" myToolTip="" myImage="" ></challenge>
+          <challenge myTitle="接龙" :available="false" myToolTip="" myImage="" ></challenge>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

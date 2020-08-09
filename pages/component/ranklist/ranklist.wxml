@@ -1,0 +1,9 @@
+<!--pages/component/rankList/ranklist.wxml-->
+<text>{{title}}</text>
+  <label class="weui-cell weui-check__label" wx:for="{{dataList}}" wx:key="{{dataList.rank}}">
+    <view class="weui-cell__bd">{{item.rank}}</view>
+    <view class="weui-cell__bd">{{item.img}}</view>
+    <view class="weui-cell__bd">{{item.name}}</view>
+    <view class="weui-cell__bd">{{item.scope}}</view>
+
+  </label>

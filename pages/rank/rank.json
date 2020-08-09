@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "战力排行榜",
+  "usingComponents": {
+    "ranklist":"../component/ranklist/ranklist"
+  }
+}

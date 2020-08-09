@@ -1,0 +1,12 @@
+<!--pages/component/challenge/challenge.wxml-->
+
+<view>
+  <image style="width: 80px; height: 100px; background-color: #eeeeee;" 
+  mode="scaleToFill" src="{{myImage}}">
+  </image>
+ <cover-view  class="cover-view">{{myTitle}}</cover-view>
+  <button  wx:if="{{available}}" type="primary" bindtap="gotoPage">来挑战啊</button>
+  <button  wx:else disabled >来挑战啊</button>
+
+  </view>
+

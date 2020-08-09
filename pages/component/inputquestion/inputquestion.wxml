@@ -1,0 +1,8 @@
+<!--pages/component/inputquestion/inputquestion.wxml-->
+<text>请回答：</text>
+<text>{{question}}</text>
+<input class="weui-input" bindinput="bindKeyInput" auto-focus placeholder="请输入答案"/>
+<button  wx:if="{{!finishend}}" type="primary" bindtap="butClik" >提交</button>
+<text wx:if="{{showRedpackage}}">恭喜回答正确，你将获得{{score}}金元宝，积攒金元宝，可以提现红包哦！</text>
+<text wx:if="{{showErrorMsg}}">很遗憾回答错误，正确答案是 {{answer}}。不能获得积分，继续努力哦！</text>
+<button  wx:if="{{finishend}}" type="primary" bindtap="gotoPage">下一题</button>

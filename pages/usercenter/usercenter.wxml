@@ -1,0 +1,8 @@
+<!--pages/usercenter/usercenter.wxml-->
+<view>
+  <view><text>个人中心</text></view>
+
+  <view><text>{{userInfo.img}}</text></view>
+  <view><text>{{userInfo.name}}</text></view>
+  <view><text>{{userInfo.scope}}</text></view>
+</view>

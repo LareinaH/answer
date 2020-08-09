@@ -1,0 +1,8 @@
+/* pages/component/challenge/challenge.wxss */
+
+.cover-view {
+  position: relative;
+  top: calc(50% - 15rpx);
+  left: calc(50% - 30rpx);
+  /* opacity: .7; */
+}

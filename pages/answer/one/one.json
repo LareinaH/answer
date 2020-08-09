@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "inputquestion":"../../component/inputquestion/inputquestion",
+    "selectquestion":"../../component/selectquestion/selectquestion"
+  }
+}

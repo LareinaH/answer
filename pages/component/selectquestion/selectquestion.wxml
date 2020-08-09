@@ -1,0 +1,15 @@
+<!--pages/component/selectquestion/selectquestion.wxml-->
+<text>请回答：</text>
+<text>{{question}}</text>
+<radio-group bindchange="radioChange">
+  <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+    <view class="weui-cell__hd">
+      <radio value="{{item.value}}" />
+    </view>
+    <view class="weui-cell__bd">{{item.key + " " + item.name}}</view>
+  </label>
+</radio-group>
+<button  wx:if="{{!finishend}}" type="primary" bindtap="butClik" >提交</button>
+<text wx:if="{{showRedpackage}}">恭喜回答正确，你将获得{{score}}金元宝，积攒金元宝，可以提现红包哦！</text>
+<text wx:if="{{showErrorMsg}}">很遗憾回答错误，正确答案是 {{answer}}。不能获得积分，继续努力哦！</text>
+<button  wx:if="{{finishend}}" type="primary" bindtap="gotoPage">下一题</button>
